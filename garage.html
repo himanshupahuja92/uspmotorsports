@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>USP Motorsports - Complete Layout</title>
+      <link rel="stylesheet" href="https://use.typekit.net/fcd0awa.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xde5rsw.css">
+      <!-- <link rel="stylesheet" href="https://use.typekit.net/okm3mzl.css"> -->
+      <link rel="stylesheet" href="https://use.typekit.net/mcw2mcb.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="icon" href="assets/img/popup-logo.svg" type="image/x-icon">
+   </head>
+
+   <body>
+
+
+
+     <div id="header"></div>
+      
+      <div class="page-content">
+         <div class="d-lg-none d-flex mob-static-sidebar">
+            <div class="accordion accordion-flush" id="categoryAccordion">
+               <!-- CATEGORY ITEM -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#airIntake">
+                     Overview
+                     </button>
+                  </h2>
+                  <div id="airIntake" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
+                     <div class="accordion-body">
+                        <ul class="list-unstyled sidebar-menu">
+                           <li><a href="overview.html">Overview</a></li>
+                           <li><a href="account-information.html">Account Information</a></li>
+                           <li><a href="addresses.html">Addresses</a></li>
+                           <li><a href="garage.html">Garage + Build List</a></li>
+                           <li><a href="buildbucks.html">BuildBucks</a></li>
+                           <li><a href="orders.html">Order History</a></li>
+                           <li><a href="mailing-list.html">Mailing List</a></li>
+                           <li><a href="create-a-return.html">Create a Return/Cancellation</a></li>
+                           <li><a href="impersonate.html">Impersonate</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="myaccount-section">
+            <!-- ============ CONTACT PAGE ============ -->
+            <div class="container">
+               <div class="row">
+                  <!-- ========== LEFT SIDEBAR (ONLY XL) ========== -->
+                  <div class="col-xl-2 col-lg-3 col d-none d-lg-block">
+                     <div class="sidebar-list">
+                        <div class="title">My Account</div>
+                        <ul class="list-unstyled sidebar-menu">
+                           <li><a href="overview.html">Overview</a></li>
+                           <li><a href="account-information.html">Account Information</a></li>
+                           <li><a href="addresses.html">Addresses</a></li>
+                           <li><a href="garage.html">Garage + Build List</a></li>
+                           <li><a href="buildbucks.html">BuildBucks</a></li>
+                           <li><a href="orders.html">Order History</a></li>
+                           <li><a href="mailing-list.html">Mailing List</a></li>
+                           <li><a href="create-a-return.html">Create a Return/Cancellation</a></li>
+                           <li><a href="impersonate.html">Impersonate</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- ================= RIGHT SECTION ================= -->
+                  <div class="col-12 col-xl-10 col-lg-9 ps-xl-4 pe-xl-4">
+                
+                  <div class="d-flex  px-lg-0 px-4">
+                        <div class=" desktop-title text-uppercase mb-2 d-lg-block d-none">My garage</div>
+                        <div class="mobile-title text-uppercase mb-2 d-lg-none d-block">My garage</div>
+                  </div>
+                  <div class="mb-8 px-lg-0 px-4"><p class="mb-0">Your vehicle information</p></div>
+               
+    <!-- Table Wrapper -->
+                  <div class="table-responsive">
+   <table class="table recent-orders-table mb-0 "id="recentOrdersTable">
+    <thead >
+      <tr>
+        <th>Primary</th>
+        <th>
+          <div class="d-flex d-flex justify-content-between">
+            <span>Vehicle Information</span>
+            <button class="btn  p-0 text-white  fw-semibold d-lg-block d-none w-auto">
+              <span class="me-1">+</span> Add a Vehicle
+            </button>
+          </div>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <!-- Primary -->
+        <td>
+          <button class="btn  btn-outline-secondary border-2 rounded-pill py-0 small fw-semibold">
+            Select
+          </button>
+        </td>
+
+        <!-- Vehicle Info -->
+        <td>
+          <div class="d-lg-flex justify-content-between align-items-center">
+            <span class="fw-semibold fw-lg-normal">
+              2022 Audi A3 Quattro
+            </span>
+
+            <!-- Mobile Actions -->
+            <div class="d-lg-none mt-1 d-flex flex-wrap align-items-center gap-1">
+              <a href="#" class="text-decoration-underline me-2">Shop Parts</a>
+              <span class="vr"></span>
+              <a href="#" class="text-decoration-underline mx-2" data-bs-toggle="modal" data-bs-target="#fitmentModal">Edit Fitment</a>
+             
+              <button class="btn btn-link text-danger text-decoration-underline p-0 w-100 text-start">
+                Delete
+              </button>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="d-none d-lg-flex align-items-center ">
+              <a href="#" class="text-decoration-underline px-4 border-end ">Shop Parts</a>
+              <a href="#" class="text-decoration-underline px-4 border-end" data-bs-toggle="modal" data-bs-target="#fitmentModal">Edit Fitment</a>
+              <a href="#" class="text-danger text-decoration-none px-4 ">Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <!-- Primary -->
+        <td>
+          <button class="btn btn-outline-danger border-2  rounded-pill py-0 small fw-semibold">
+            Current
+          </button>
+        </td>
+
+        <!-- Vehicle Info -->
+        <td>
+          <div class="d-lg-flex justify-content-between align-items-center">
+            <span class="fw-semibold fw-lg-normal">
+              2022 Audi A3 Quattro
+            </span>
+
+            <!-- Mobile Actions -->
+            <div class="d-lg-none mt-1 d-flex flex-wrap align-items-center gap-1">
+              <a href="#" class="text-decoration-underline me-2">Shop Parts</a>
+              <span class="vr"></span>
+             
+              <a href="#" class="fb-quickview text-decoration-underline mx-2" data-bs-toggle="modal" data-bs-target="#quickViewModal">Edit Fitment</a>
+              
+              <button class="btn btn-link text-danger text-decoration-underline p-0 w-100 text-start">
+                Delete
+              </button>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="d-none d-lg-flex align-items-center ">
+              <a href="#" class="text-decoration-underline px-4 border-end ">Shop Parts</a>
+        
+               <a href="#" class="text-decoration-underline px-4 border-end" data-bs-toggle="modal" data-bs-target="#fitmentModal">Edit Fitment</a>
+              <a href="#" class="text-danger text-decoration-none px-4 ">Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+          <div class="px-4 d-lg-none d-block ">
+                        <button class="btn fb-btn w-100 ">
+              <span class="me-1">+</span> Add a Vehicle
+            </button>
+          </div>
+
+
+    
+
+                     
+                  </div>
+               </div>
+              
+                  
+            </div>
+           
+        
+         </section>
+          <hr class="my-6 custom-spacing">
+         <section class="position-relative">
+         <div class="container account-with-menu-container">
+                    <div class="row">
+                  <!-- ========== LEFT SIDEBAR (ONLY XL) ========== -->
+                 
+                      <div class="col-12 col-xl-12 col-lg-12  pe-lg-4">
+                           <div class="d-flex  justify-content-between align-items-center mb-8 px-lg-0 px-4">
+                              <div class="d-block">
+                                 <h4 class=" desktop-title text-uppercase mb-3 d-lg-block d-none">BUILD LIST</h4>
+                                 <h4 class="mobile-title text-uppercase mb-3 d-lg-none d-block">BUILD LIST</h4>
+                                 <p class="mb-lg-3 mb-0">Save products in your build list to purchase later. You can even create multiple build lists</p>
+                              </div>
+                              
+                              <a href="#" class="mb-3 d-lg-block d-none fw-semibold" data-bs-toggle="modal" data-bs-target="#createBuildListModal">+ Create a New List</a>
+                            
+                            </div>
+                            <div class="d-flex my-4 px-lg-0 px-4 Build-list-name ">
+                              <div class="mobile-title inline-block">bnm,.</div>
+                               <button class="btn  text-dark p-0 mx-3 btn-link fw-semibold"  data-bs-toggle="modal" data-bs-target="#EditBuildListModal">Edit list Name</button>
+                                <button class="btn  text-dark p-0 btn-link fw-semibold">Remove list</button></div>
+
+                           <div class="usp-product-carousel position-relative">
+                    <div class="swiper BuildListSwiper">
+                     <div class="swiper-wrapper">
+                        <!-- repeat cards -->
+                         <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                       
+                         <div class="swiper-slide">
+                            <div class="build-product">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="d-lg-block d-none">                         <button type="button" class="primary-btn btn-dark mx-auto">Add to cart</button>
+                         <div class="d-flex gap-3 mt-2 align-items-center justify-content-center">
+
+  <!-- MOVE DROPDOWN -->
+  <div class="dropdown position-relative product-move-action">
+    <button
+  class="btn  p-0 d-flex align-items-center gap-1 text-dark"
+  type="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span>Move</span>
+
+  <!-- INLINE CHEVRON -->
+  <svg class="move-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+</button>
+
+
+    <ul class="dropdown-menu mt-0 rounded-0" aria-labelledby="moveDropdown">
+      <li>
+        <button class="dropdown-item">Build List Test</button>
+      </li>
+      <li>
+        <button class="dropdown-item fw-semibold">
+          + Add Build List
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SEPARATOR -->
+  <div >|</div>
+
+  <!-- REMOVE -->
+  <div class="product-remove-action">
+    <button class="btn  text-danger p-0">
+      Remove
+    </button>
+  </div>
+
+</div></div>
+
+                        </div>
+
+                      </div>
+                      </div>
+                        
+                      
+                     </div>
+                     <button class="Recently-prev swiper-button-prev" aria-label="Previous"></button>
+            <button class="Recently-next swiper-button-next" aria-label="Next"></button>
+                          <div class="d-flex my-8 px-lg-0 px-4 Build-list-name">
+                              <div class="mobile-title inline-block">Build List Test </div>
+                                 <button class="btn  text-dark p-0 mx-3 btn-link fw-semibold"  data-bs-toggle="modal" data-bs-target="#EditBuildListModal">Edit list Name</button>
+                                <button class="btn  text-dark p-0 btn-link fw-semibold">Remove list</button></div>
+                      </div>
+               </div>
+            </div>
+         </section>
+         <!--  Create a New List popup -->
+         <div class="modal fade" id="createBuildListModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  buildListpopup">
+    <div class="modal-content border-0 rounded-0">
+<div class="cart-modal-top bg-white d-flex align-items-center">
+                     <button type="button" class="cart-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                     <span class="cart-back-icon-wrapper">
+                     <i class="fa-solid fa-arrow-left"></i>
+                     </span>
+                     </button>
+                  </div>
+      <!-- Modal Body -->
+      <div class="modal-body text-center mb-20 position-relative">
+
+       
+
+        <h2 class="section-title mb-2">CREATE A NEW BUILD LIST</h2>
+        <p class=" mb-4">Name your Build List</p>
+
+        <div class="mx-auto" style="max-width: 420px;">
+          <input
+            type="text"
+            class="form-control mb-4 custom-input"
+            placeholder="Build List Name"
+          />
+
+          <button class="btn btn-dark primary-btn mx-auto">
+            Submit
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit list Name -->
+         <div class="modal fade" id="EditBuildListModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  buildListpopup">
+    <div class="modal-content border-0 rounded-0">
+<div class="cart-modal-top bg-white d-flex align-items-center">
+                     <button type="button" class="cart-close-btn " data-bs-dismiss="modal" aria-label="Close">
+                     <span class="cart-back-icon-wrapper">
+                     <i class="fa-solid fa-arrow-left"></i>
+                     </span>
+                     </button>
+                  </div>
+      <!-- Modal Body -->
+      <div class="modal-body text-center mb-20 position-relative">
+
+       
+
+        <h2 class="section-title mb-2">Edit your Build List’s name</h2>
+        <p class=" mb-4">Name this Build List to help distinguish it from the others. Ex: Interior Mods</p>
+
+        <div class="mx-auto" style="max-width: 420px;">
+          <input
+            type="text"
+            class="form-control mb-4 custom-input"
+            placeholder="Edit Build List Name"
+          />
+
+          <button class="btn btn-dark primary-btn mx-auto">
+            Submit
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+         <!--Edit Fitment -->
+<div class="modal fade" id="fitmentModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog custom-fitment-view-popup modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="container text-center">
+          <h4 class="section-title text-white mb-2"> Edit Fitment</h4>
+        <p class="text-white mb-4">Never get asked about fitment again! Enter or Edit all of your vehicle’s information</p>
+          <form id="vehicleChooserForm" class="flex flex-col lg:flex-row justify-between text-base gap-3 mb-5 vehicle-chooser-custom" role="search">
+               <div tabindex="0" data-step="1" class="select usp-step-select" aria-expanded="false">
+                  <div class="step-index">1</div>
+                  <span class="select__display">Year</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                     <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"stroke-linejoin="round"/>
+                  </svg>
+                  <ul class="select__dropdown" data-step="1" style="display:none"></ul>
+               </div>
+               <div tabindex="0" data-step="2" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                  <div class="step-index">2</div>
+                  <span class="select__display">Make</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                     <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"stroke-linejoin="round"/>
+                  </svg>
+                  <ul class="select__dropdown" data-step="2" style="display:none"></ul>
+               </div>
+               <div tabindex="0" data-step="3" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                  <div class="step-index">3</div>
+                  <span class="select__display">Model</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                     <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"stroke-linejoin="round"/>
+                  </svg>
+                  <ul class="select__dropdown" data-step="3" style="display:none"></ul>
+               </div>
+               <div tabindex="0" data-step="4" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                  <div class="step-index">4</div>
+                  <span class="select__display">Trim</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                     <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"stroke-linejoin="round"/>
+                  </svg>
+                  <ul class="select__dropdown" data-step="4" style="display:none"></ul>
+               </div>
+               <div tabindex="0" data-step="5" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                  <div class="step-index">5</div>
+                  <span class="select__display">Engine</span>
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                     <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"stroke-linejoin="round"/>
+                  </svg>
+                  <ul class="select__dropdown" data-step="5" style="display:none"></ul>
+               </div>
+            </form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+      </div>
+      <div id="footer"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

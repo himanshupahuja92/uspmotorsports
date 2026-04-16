@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>USP Motorsports - Complete Layout</title>
+      <link rel="stylesheet" href="https://use.typekit.net/fcd0awa.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xde5rsw.css">
+      <!-- <link rel="stylesheet" href="https://use.typekit.net/okm3mzl.css"> -->
+      <link rel="stylesheet" href="https://use.typekit.net/mcw2mcb.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="icon" href="assets/img/popup-logo.svg" type="image/x-icon">
+   </head>
+   <body>
+      <div id="header"></div>
+      <div class="page-content">
+         <section class="category-chooser" style="background-image: url('https://assets.uspmotorsports.com/zsmxyc/1920/1020/resize/categories/hero/usp-engine.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-white">
+               <span class="hero-subtitle">Engine</span>
+               <h1 class="hero-title">Alternator</h1>
+            </div>
+            <!-- Custom step selects (Year -> Make -> Model -> Trim -> Engine) -->
+         </section>
+         <div class="vehicle-chooser-wrapper py-4">
+            <div class="container d-flex justify-content-center">
+               <div class="Select-text">
+                  <h5 class="mb-0 text-white">Select your vehicle</h5>
+               </div>
+               <form id="vehicleChooserForm" class=" gap-3  vehicle-chooser-custom" role="search">
+                  <div tabindex="0" data-step="1" class="select usp-step-select" aria-expanded="false">
+                     <div class="step-index">1</div>
+                     <span class="select__display">Year</span>
+                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                        <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <ul class="select__dropdown" data-step="1" style="display:none">
+                        <li class="select-option" data-value="2025">2025</li>
+                        <li class="select-option" data-value="2024">2024</li>
+                        <li class="select-option" data-value="2023">2023</li>
+                        <li class="select-option" data-value="2022">2022</li>
+                        <li class="select-option" data-value="2021">2021</li>
+                        <li class="select-option" data-value="2020">2020</li>
+                        <li class="select-option" data-value="2019">2019</li>
+                        <li class="select-option" data-value="2018">2018</li>
+                        <li class="select-option" data-value="2017">2017</li>
+                        <li class="select-option" data-value="2016">2016</li>
+                        <li class="select-option" data-value="2015">2015</li>
+                        <li class="select-option" data-value="2014">2014</li>
+                        <li class="select-option" data-value="2013">2013</li>
+                        <li class="select-option" data-value="2012">2012</li>
+                        <li class="select-option" data-value="2011">2011</li>
+                        <li class="select-option" data-value="2010">2010</li>
+                        <li class="select-option" data-value="2009">2009</li>
+                        <li class="select-option" data-value="2008">2008</li>
+                        <li class="select-option" data-value="2007">2007</li>
+                        <li class="select-option" data-value="2006">2006</li>
+                        <li class="select-option" data-value="2005">2005</li>
+                        <li class="select-option" data-value="2004">2004</li>
+                        <li class="select-option" data-value="2003">2003</li>
+                        <li class="select-option" data-value="2002">2002</li>
+                        <li class="select-option" data-value="2001">2001</li>
+                        <li class="select-option" data-value="2000">2000</li>
+                        <li class="select-option" data-value="1999">1999</li>
+                        <li class="select-option" data-value="1998">1998</li>
+                        <li class="select-option" data-value="1997">1997</li>
+                        <li class="select-option" data-value="1996">1996</li>
+                        <li class="select-option" data-value="1995">1995</li>
+                        <li class="select-option" data-value="1994">1994</li>
+                        <li class="select-option" data-value="1993">1993</li>
+                        <li class="select-option" data-value="1992">1992</li>
+                        <li class="select-option" data-value="1991">1991</li>
+                        <li class="select-option" data-value="1990">1990</li>
+                     </ul>
+                  </div>
+                  <div tabindex="0" data-step="2" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                     <div class="step-index">2</div>
+                     <span class="select__display">Make</span>
+                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                        <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <ul class="select__dropdown" data-step="2" style="display:none"></ul>
+                  </div>
+                  <div tabindex="0" data-step="3" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                     <div class="step-index">3</div>
+                     <span class="select__display">Model</span>
+                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                        <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <ul class="select__dropdown" data-step="3" style="display:none"></ul>
+                  </div>
+                  <div tabindex="0" data-step="4" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                     <div class="step-index">4</div>
+                     <span class="select__display">Trim</span>
+                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                        <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <ul class="select__dropdown" data-step="4" style="display:none"></ul>
+                  </div>
+                  <div tabindex="0" data-step="5" class="select usp-step-select usp-step-select--disabled" aria-disabled="true" aria-expanded="false">
+                     <div class="step-index">5</div>
+                     <span class="select__display">Engine</span>
+                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select__chevron">
+                        <path d="M2 2 L8 8 L14 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <ul class="select__dropdown" data-step="5" style="display:none"></ul>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <!-- Product Breadcrumb -->
+         <nav class="product-breadcrumb container my-4 mx-auto d-lg-flex d-none">
+            <a href="#">Home</a>
+            <a href="#">Engine</a>
+            <span>Alternator</span>
+         </nav>
+         <!-- Category Sections -->
+         <!-- Product Listing Section -->
+         <section class="listing-section ">
+            <div class="container">
+               <div class="row gap-5">
+                  <!-- LEFT FILTER -->
+                  <aside class="filter-sidebar col-lg-3">
+                     <h3 class="mb-8">REFINE BY</h3>
+                     <!-- REFINE ACCORDION -->
+                     <div class="accordion accordion-flush" id="refineAccordion">
+                        <!-- PRICE RANGE -->
+                        <div class="accordion-item">
+                           <div  class="accordion-header">
+                              <button class="accordion-button py-3 px-0"
+                                 type="button"
+                                 data-bs-toggle="collapse"
+                                 data-bs-target="#priceRange"
+                                 aria-expanded="true">
+                              Price Range
+                              </button>
+                           </div>
+                           <div id="priceRange"
+                              class="accordion-collapse collapse show">
+                              <div class="accordion-body pt-3">
+                                 <!-- RANGE SLIDER -->
+                                 <div class="price-range-wrapper mb-3">
+                                    <!-- BASE TRACK -->
+                                    <div class="range-track"></div>
+                                    <!-- ACTIVE TRACK -->
+                                    <div class="range-active" id="rangeActive"></div>
+                                    <!-- SLIDERS -->
+                                    <input type="range" id="minRange" min="0" max="29982" value="0">
+                                    <input type="range" id="maxRange" min="0" max="29982" value="29982">
+                                 </div>
+                                 <div class="d-flex align-items-center gap-2">
+                                    <input type="text" id="minPrice"
+                                       class="form-control form-control-sm text-center"
+                                       value="$0">
+                                    <span>–</span>
+                                    <input type="text" id="maxPrice"
+                                       class="form-control form-control-sm text-center"
+                                       value="$29982">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- SHOP BY -->
+                        <div class="accordion-item ">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button py-3 px-0"
+                                 type="button"
+                                 data-bs-toggle="collapse"
+                                 data-bs-target="#shopBy"
+                                 aria-expanded="true">
+                              Shop By
+                              </button>
+                           </h2>
+                           <div id="shopBy"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#refineAccordion">
+                              <div class="accordion-body pt-2">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Sale <span>(497)</span></label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- BRAND -->
+                        <div class="accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button py-3 px-0"
+                                 type="button"
+                                 data-bs-toggle="collapse"
+                                 data-bs-target="#brandFilter"
+                                 aria-expanded="true">
+                              Brand
+                              </button>
+                           </h2>
+                           <div id="brandFilter"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#refineAccordion">
+                              <div class="accordion-body pt-2 overflow-auto" style="max-height:240px">
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> 034 Motorsport <span>(323)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> ACCEL <span>(3)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> ACL <span>(3)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> AEM <span>(8)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> AFE <span>(55)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> 034 Motorsport <span>(323)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> ACCEL <span>(3)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> ACL <span>(3)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> AEM <span>(8)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> AFE <span>(55)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> 034 Motorsport <span>(323)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> ACCEL <span>(3)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> ACL <span>(3)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> AEM <span>(8)</span></div>
+                                 <div class="form-check"><input class="form-check-input" type="checkbox"> AFE <span>(55)</span></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- CATEGORY -->
+                     <h3 class="mb-8 mt-8 pt-8 border-top">BROWSE BY CATEGORY</h3>
+                     <div class="accordion accordion-flush" id="categoryAccordion">
+                        <!-- CATEGORY ITEM -->
+                        <div class="accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button "
+                                 data-bs-toggle="collapse"
+                                 data-bs-target="#airIntake">
+                              Air Intake <span class="ms-1 text-muted">(52)</span>
+                              </button>
+                           </h2>
+                           <div id="airIntake"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#categoryAccordion">
+                              <div class="accordion-body py-2 ps-3">
+                                 <a href="#" class="d-block">All Air Intake</a>
+                                 <a href="#" class="d-block">Intake Air Filter <span>(2)</span></a>
+                                 <a href="#" class="d-block">Intake Manifolds <span></span>(1)</span></a>
+                                 <a href="#" class="d-block">Performance Air Intake Kits <span>(41)</span></a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- CATEGORY ITEM -->
+                        <div class="accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button collapsed "
+                                 data-bs-toggle="collapse"
+                                 data-bs-target="#engineCat">
+                              Engine <span class="ms-1 text-muted">(25794)</span>
+                              </button>
+                           </h2>
+                           <div id="engineCat"
+                              class="accordion-collapse collapse"
+                              data-bs-parent="#categoryAccordion"></div>
+                        </div>
+                     </div>
+                  </aside>
+                  <!-- RIGHT CONTENT -->
+                  <div class="product-listing">
+                     <!-- TOP BAR -->
+                     <div class="listing-toolbar d-lg-flex align-items-center justify-content-between">
+                        <!-- SORT SELECT (CUSTOM) -->
+                        <div class="sort-select-wrapper">
+                           <div class="dropdown">
+                              <button
+                                 class="sort-select-btn d-flex align-items-stretch"
+                                 type="button"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false"
+                                 >
+                              <span class="sort-label">Sort by:</span>
+                              <span class="sort-value flex-grow-1">Featured</span>
+                              <span class="sort-divider"></span>
+                              <i class="fa-solid fa-chevron-down sort-chevron"></i>
+                              </button>
+                              <ul class="dropdown-menu sort-dropdown">
+                                 <li><a class="dropdown-item active" href="#">Featured</a></li>
+                                 <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                                 <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                                 <li><a class="dropdown-item" href="#">Name: A-Z</a></li>
+                                 <li><a class="dropdown-item" href="#">Name: Z-A</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <!-- RIGHT : RESULT + VIEW -->
+                        <div class="d-flex align-items-center gap-4">
+                           <div class="results-count">
+                              1 - 24 of 378 results
+                           </div>
+                           <div class="view-toggle d-flex align-items-center gap-4">
+                              <button class="toggle-btn active" data-view="grid"><img src="assets/img/icons/grid-icon.svg" alt="grid " class="img-fluid"></button>
+                              <button class="toggle-btn" data-view="list"><img src="assets/img/icons/bar-icon.svg" alt="list view" class="img-fluid"></button>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- MOBILE ONLY -->
+                     <div class="px-4 my-3">
+                        <button
+                           class="btn  w-100 d-lg-none mb-3 filter-btn"
+                           data-bs-toggle="modal"
+                           data-bs-target="#mobileFilterModal">
+                           <svg width="15" height="11" viewBox="0 0 18 14"fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon">
+                              <line x1="1" y1="2" x2="17" y2="2" stroke="currentColor" stroke-width="1.5"/>
+                              <circle cx="6" cy="2" r="2" fill="currentColor"/>
+                              <line x1="1" y1="7" x2="17" y2="7" stroke="currentColor" stroke-width="1.5"/>
+                              <circle cx="12" cy="7" r="2" fill="currentColor"/>
+                              <line x1="1" y1="12" x2="17" y2="12" stroke="currentColor" stroke-width="1.5"/>
+                              <circle cx="8" cy="12" r="2" fill="currentColor"/>
+                           </svg>
+                           Filter and Sort
+                        </button>
+                     </div>
+                     <div class="modal fade mob-filter-section" id="mobileFilterModal" tabindex="-1">
+                        <div class="modal-dialog modal-fullscreen">
+                           <div class="modal-content">
+                              <!-- HEADER -->
+                              <div class="modal-header justify-content-center position-relative">
+                                 <h4 class="modal-title">FILTER AND SORT</h4>
+                                 <button type="button"
+                                    class="btn-close position-absolute end-0 me-3"
+                                    data-bs-dismiss="modal"></button>
+                              </div>
+                              <div class="text-center small py-3 border-bottom">
+                                 65 Products
+                              </div>
+                              <!-- BODY -->
+                              <div class="modal-body p-0">
+                                 <div class="accordion accordion-flush" id="mobileFilterAccordion">
+                                    <!-- SORT -->
+                                    <div class="accordion-item border-bottom">
+                                       <h2 class="accordion-header">
+                                          <button
+                                             class="accordion-button collapsed py-3 px-3"
+                                             type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#mobileSort"
+                                             aria-expanded="false">
+                                          Sort
+                                          </button>
+                                       </h2>
+                                       <div
+                                          id="mobileSort"
+                                          class="accordion-collapse collapse"
+                                          data-bs-parent="#mobileFilterAccordion">
+                                          <div class="accordion-body border-top pt-2">
+                                             <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="sort" checked>
+                                                <label class="form-check-label">Featured</label>
+                                             </div>
+                                             <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="sort">
+                                                <label class="form-check-label">Price: Low to High</label>
+                                             </div>
+                                             <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="sort">
+                                                <label class="form-check-label">Price: High to Low</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- PRICE RANGE -->
+                                    <div class="accordion-item border-bottom">
+                                       <h2 class="accordion-header">
+                                          <button
+                                             class="accordion-button collapsed py-3 px-3"
+                                             type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#mobilePrice"
+                                             aria-expanded="false">
+                                          Price Range
+                                          </button>
+                                       </h2>
+                                       <div
+                                          id="mobilePrice"
+                                          class="accordion-collapse collapse"
+                                          data-bs-parent="#mobileFilterAccordion">
+                                          <div class="accordion-body border-top pt-2">
+                                             <!-- RANGE SLIDER -->
+                                             <div class="price-range-wrapper mb-3">
+                                                <!-- BASE TRACK -->
+                                                <div class="range-track"></div>
+                                                <!-- ACTIVE TRACK -->
+                                                <div class="range-active" id="rangeActive"></div>
+                                                <!-- SLIDERS -->
+                                                <input type="range" id="minRange" min="0" max="29982" value="0">
+                                                <input type="range" id="maxRange" min="0" max="29982" value="29982">
+                                             </div>
+                                             <div class="d-flex align-items-center gap-2 justify-content-center">
+                                                <input type="text" id="minPrice"
+                                                   class="form-control text-center"
+                                                   value="$0">
+                                                <span>–</span>
+                                                <input type="text" id="maxPrice"
+                                                   class="form-control text-center"
+                                                   value="$29982">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- sale -->
+                                    <div class="accordion-item border-bottom">
+                                       <h2 class="accordion-header">
+                                          <button
+                                             class="accordion-button collapsed py-3 px-3"
+                                             type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#mobileSale"
+                                             aria-expanded="false">
+                                          Sale By
+                                          </button>
+                                       </h2>
+                                       <div
+                                          id="mobileSale"
+                                          class="accordion-collapse collapse"
+                                          data-bs-parent="#mobileFilterAccordion">
+                                          <div class="accordion-body border-top pt-2">
+                                             <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">Sale <span>(24)</span></label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- BRAND -->
+                                    <div class="accordion-item border-bottom">
+                                       <h2 class="accordion-header">
+                                          <button
+                                             class="accordion-button collapsed py-3 px-3"
+                                             type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#mobileBrand"
+                                             aria-expanded="false">
+                                          Brand
+                                          </button>
+                                       </h2>
+                                       <div
+                                          id="mobileBrand"
+                                          class="accordion-collapse collapse"
+                                          data-bs-parent="#mobileFilterAccordion">
+                                          <div class="accordion-body border-top pt-2">
+                                             <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">OEM BMW</label>
+                                             </div>
+                                             <div class="form-check">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label">King Bearings</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- FOOTER -->
+                              <div class="modal-footer d-flex gap-2">
+                                 <button class="btn btn-dark flex-fill">Apply</button>
+                                 <button class="btn btn-outline-dark border-2 flex-fill">Clear All</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- PRODUCTS -->
+                     <div class="products-wrapper grid-view" id="productsWrapper">
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">Bosch Remanufactured</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/ProductDigitalAssets/Bosch%20Remanufactured/2020-09-04_MFR_BOSR_5001961_1.large.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">Bosch Remanufactured</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 Bosch Remanufactured Alternator - 5001961
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock ">● Back Ordered</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$142.51</span>
+                                    <!-- <span class="price-old">$1,399.00</span> -->
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: AL54X</p>
+                                    <p>SKU: 76023013</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock "> ● Back Ordered</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg" alt="" class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <!-- for grid view show brand pill-->
+                              <a href="#" class="brand-pill">Lucas</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/ProductDigitalAssets/Lucas/LUCG_07C903018X_1.jpeg" alt="" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">Lucas</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 Lucas Alternator - 07C903018X
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Back Ordered</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$389.06</span>
+                                    <!-- <span class="price-old">$1,399.00</span> -->
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: 11061</p>
+                                    <p>SKU: 76079078</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Back Ordered</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">Valeo</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/ProductDigitalAssets/Valeo%20SWF/439675_03.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">Valeo</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 Valeo Alternator - 12317837981
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● In Stock</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$369.10</span>
+                                    <!-- <span class="price-old">$1,399.00</span> -->
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: 439675</p>
+                                    <p>SKU: 76074462</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● In Stock</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                        <!-- SAME PRODUCT CARD (UNCHANGED) -->
+                        <div class="product-card">
+                           <div class="product-media position-relative">
+                              <a href="#" class="brand-pill">King Engine Bearings</a>
+                              <div class="thumb">
+                                 <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/products/default-product-image.jpg" class="img-fluid">
+                              </div>
+                           </div>
+                           <div class="product-info">
+                              <a href="#" class="brand-pill ">King Engine Bearings</a>
+                              <!--work for list style  -->
+                              <div class="product-title-rating">
+                                 <a href="#" class="product-title-2">
+                                 King Bearings Main Bearing Set (SI) For G.M.C. (Mark Iii) 5.7L (MB5013HP010)
+                                 </a>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="product-sku-price">
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="sku">
+                                    <p>MPN: TW210AM</p>
+                                    <p>SKU: 75032845</p>
+                                 </div>
+                              </div>
+                              <div class="meta-row">
+                                 <span class="stock status-available">● Available to Order</span>
+                                 <div class="rating">
+                                    <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                       <g fill="#8a8988">
+                                          <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                          <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                          <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                          <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                          <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                       </g>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- repeat cards -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pagination-section border-top border-bottom border-2">
+               <div class="container d-flex pagination-wrap">
+                  <!-- LEFT EMPTY SPACE (filter sidebar width placeholder) -->
+                  <div class="pagination-left-spacer d-lg-block d-none"></div>
+                  <!-- CENTER + RIGHT -->
+                  <div class="d-flex flex-grow-1 justify-content-center justify-content-lg-between align-items-center flex-wrap">
+                     <!-- RESULTS COUNT -->
+                     <span class="subtitle-5 d-none d-lg-inline">
+                     1 - 24 of 378 results
+                     </span>
+                     <!-- PAGINATION -->
+                     <div class="d-flex align-items-center pagination-center">
+                        <!-- PREV -->
+                        <button class="btn btn-link d-flex align-items-center text-muted disabled">
+                        <i class='fas fa-chevron-left me-3' ></i> 
+                        <span class="d-none d-lg-inline prev">Prev</span>
+                        </button>
+                        <!-- PAGE NUMBERS -->
+                        <div class="d-flex gap-2 d-none d-lg-flex">
+                           <a href="#" class="subtitle-4  active">1</a>
+                           <a href="#" class="subtitle-4">2</a>
+                           <a href="#" class="subtitle-4">3</a>
+                           <a href="#" class="subtitle-4">4</a>
+                           <a href="#" class="subtitle-4">5</a>
+                           <span class="subtitle-4">…</span>
+                           <a href="#" class="subtitle-4">16</a>
+                        </div>
+                        <!-- MOBILE PAGE -->
+                        <span class="d-lg-none subtitle-4 mx-3">
+                        1 / 16
+                        </span>
+                        <!-- NEXT -->
+                        <button class="btn btn-link d-flex align-items-center">
+                        <span class="d-none d-lg-inline next">Next</span> 
+                        <i class='fas fa-chevron-right ms-3'></i>
+                        </button>
+                     </div>
+                     <!-- ITEMS PER PAGE -->
+                     <div class="d-lg-flex d-none align-items-center items-per-page">
+                        <span class="me-2">Items Per Page:</span>
+                        <button class="ipp-btn active">24</button>
+                        <button class="ipp-btn">48</button>
+                        <button class="ipp-btn no-divider">96</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- TRENDING PRODUCTS (Swiper + Bootstrap friendly markup) -->
+         <section class="trending-products position-relative d-lg-block d-none ">
+            <div class="container">
+               <div class="section-header">
+                  <h2 class="section-title">New Arrivals</h2>
+                  <a href="/sales" class="see-all-link">Shop All</a>
+               </div>
+               <div class="usp-product-carousel position-relative">
+                  <div class="swiper trendingSwiper">
+                     <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="product-labels">
+                                    <span class="badge badge-sale">SALE</span>
+                                    <span class="badge badge-new">NEW</span>
+                                 </div>
+                                 <div class="thumb">
+                                    <img src="assets/img/trending_products01.webp" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info bg-white">
+                                 <a href="#" class="product-title">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="product-labels">
+                                    <span class="badge badge-sale">SALE</span>
+                                    <span class="badge badge-new">NEW</span>
+                                 </div>
+                                 <div class="thumb">
+                                    <img src="assets/img/trending_products02.webp" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info bg-white">
+                                 <a href="#" class="product-title">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">AWE Tuning</a>
+                                 <div class="product-labels">
+                                    <span class="badge badge-sale">SALE</span>
+                                 </div>
+                                 <div class="thumb">
+                                    <img src="assets/img/trending_products03.webp" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info bg-white">
+                                 <a href="#" class="product-title">AWE S-FLO Carbon Intake System For G8X BMW M2/M3/M4</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,895.00</span>
+                                    <span class="price-old">$1,994.74</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">Neuspeed</a>
+                                 <div class="product-labels">
+                                    <span class="badge badge-sale">SALE</span>
+                                 </div>
+                                 <div class="thumb">
+                                    <img src="assets/img/trending_products04.webp" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info bg-white">
+                                 <a href="#" class="product-title">Neuspeed Hi-Per Intake System For VW/Audi MQB 1.8/2.0T (W/SAI)</a>
+                                 <div class="price-row">
+                                    <span class="price">$463.20</span>
+                                    <span class="price-old">$579.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">Neuspeed</a>
+                                 <div class="product-labels">
+                                    <span class="badge badge-sale">SALE</span>
+                                 </div>
+                                 <div class="thumb">
+                                    <img src="assets/img/trending_products05.webp" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info bg-white">
+                                 <a href="#" class="product-title">Neuspeed Hi-Per Intake System For VW/Audi MQB 1.8/2.0T (W/SAI)</a>
+                                 <div class="price-row">
+                                    <span class="price">$463.20</span>
+                                    <span class="price-old">$579.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">Neuspeed</a>
+                                 <div class="product-labels">
+                                    <span class="badge badge-sale">SALE</span>
+                                 </div>
+                                 <div class="thumb">
+                                    <img src="assets/img/trending_products02.webp" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info bg-white">
+                                 <a href="#" class="product-title">Neuspeed Hi-Per Intake System For VW/Audi MQB 1.8/2.0T (W/SAI)</a>
+                                 <div class="price-row">
+                                    <span class="price">$463.20</span>
+                                    <span class="price-old">$579.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Nav buttons -->
+               </div>
+            </div>
+            <button class="trending-prev swiper-button-prev" aria-label="Previous"></button>
+            <button class="trending-next swiper-button-next" aria-label="Next"></button>
+         </section>
+         <hr class=" d-lg-block d-none">
+         <section class="trending-products recenet-view position-relative d-lg-block d-none">
+            <div class="container">
+               <div class="section-header">
+                  <h2 class="section-title">Recently Viewed</h2>
+               </div>
+               <div class="usp-product-carousel position-relative">
+                  <div class="swiper RecentlySwiper">
+                     <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau952.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">JDY Performance</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau951.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info">
+                                 <a href="#" class="product-title-2">JDY Ultimate 5-inch Intake Package For 8V/8S Audi RS3/TTRS</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,259.10</span>
+                                    <span class="price-old">$1,399.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">AWE Tuning</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau950_2.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info">
+                                 <a href="#" class="product-title-2">AWE S-FLO Carbon Intake System For G8X BMW M2/M3/M4</a>
+                                 <div class="price-row">
+                                    <span class="price">$1,895.00</span>
+                                    <span class="price-old">$1,994.74</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">Neuspeed</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau949.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">Neuspeed Hi-Per Intake System For VW/Audi MQB 1.8/2.0T (W/SAI)</a>
+                                 <div class="price-row">
+                                    <span class="price">$463.20</span>
+                                    <span class="price-old">$579.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">Neuspeed</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/ssxau948.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info ">
+                                 <a href="#" class="product-title-2">Neuspeed Hi-Per Intake System For VW/Audi MQB 1.8/2.0T (W/SAI)</a>
+                                 <div class="price-row">
+                                    <span class="price">$463.20</span>
+                                    <span class="price-old">$579.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                           <div class="product-card">
+                              <div class="product-media position-relative">
+                                 <a href="#" class="brand-pill">Neuspeed</a>
+                                 <div class="thumb">
+                                    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/_default_upload_bucket/high-output-ignition-coils_53088281967_o_1.jpg" alt="" class="img-fluid">
+                                 </div>
+                              </div>
+                              <div class="product-info">
+                                 <a href="#" class="product-title-2">Neuspeed Hi-Per Intake System For VW/Audi MQB 1.8/2.0T (W/SAI)</a>
+                                 <div class="price-row">
+                                    <span class="price">$463.20</span>
+                                    <span class="price-old">$579.00</span>
+                                 </div>
+                                 <div class="meta-row">
+                                    <span class="stock status-available">● Available to Order</span>
+                                    <div class="rating">
+                                       <svg width="53" height="9" viewBox="0 0 110 20" xmlns="http://www.w3.org/2000/svg"class="usp-rating">
+                                          <g fill="#8a8988">
+                                             <path d="M10 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L10 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L10 1.5z"/>
+                                             <path d="M32 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L32 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L32 1.5z"/>
+                                             <path d="M54 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L54 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L54 1.5z"/>
+                                             <path d="M76 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L76 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L76 1.5z"/>
+                                             <path d="M98 1.5l2.9 5.88 6.49.94-4.7 4.58 1.11 6.48L98 15.9l-5.8 3.48 1.11-6.48-4.7-4.58 6.49-.94L98 1.5z"/>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Nav buttons -->
+               </div>
+            </div>
+            <button class="Recently-prev swiper-button-prev" aria-label="Previous"></button>
+            <button class="Recently-next swiper-button-next" aria-label="Next"></button>
+         </section>
+      </div>
+      <div id="footer"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

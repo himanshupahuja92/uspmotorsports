@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>USP Motorsports - Complete Layout</title>
+      <link rel="stylesheet" href="https://use.typekit.net/fcd0awa.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xde5rsw.css">
+      <!-- <link rel="stylesheet" href="https://use.typekit.net/okm3mzl.css"> -->
+      <link rel="stylesheet" href="https://use.typekit.net/mcw2mcb.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="icon" href="assets/img/popup-logo.svg" type="image/x-icon">
+   </head>
+
+   <body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* ================= COMMON ================= */
+
+  const step1 = document.querySelector(".step-1");
+  const step2 = document.querySelector(".step-2");
+  const step3 = document.querySelector(".step-3");
+
+  const checkbox = document.querySelector(".product-check");
+  const reasonBox = document.querySelector(".reason-box");
+  const reasonError = document.querySelector(".reason-error");
+  const reasonValue = document.querySelector(".sort-value");
+
+  const step1Summary = document.querySelector(".step1-summary");
+  const step1SummaryText = document.querySelector(".step1-summary-text");
+
+  const step2Content = document.querySelector(".step2-content");
+  const step2Summary = document.querySelector(".step2-summary");
+  const refundError = document.querySelector(".refund-error");
+
+  /* ================= STEP 1 ================= */
+
+  checkbox.addEventListener("change", function () {
+    if (this.checked) {
+      reasonBox.classList.remove("d-none");
+      document.querySelectorAll(".continue-btn").forEach(btn => btn.classList.remove("d-none"));
+    } else {
+      reasonBox.classList.add("d-none");
+      document.querySelectorAll(".continue-btn").forEach(btn => btn.classList.add("d-none"));
+    }
+  });
+
+  /* Reason dropdown */
+  document.querySelectorAll(".sort-dropdown .dropdown-item").forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      reasonValue.textContent = this.textContent;
+      reasonError.classList.add("d-none");
+    });
+  });
+
+  /* CONTINUE STEP 1 (DESKTOP + MOBILE) */
+document.querySelectorAll(".continue-btn").forEach(btn => {
+  btn.addEventListener("click", function () {
+
+    if (reasonValue.textContent === "Select Reason") {
+      reasonError.classList.remove("d-none");
+      return;
+    }
+
+    step1SummaryText.textContent = reasonValue.textContent;
+
+    step1.querySelector(".step1-body").classList.add("d-none");
+    reasonBox.classList.add("d-none");
+    step1Summary.classList.remove("d-none");
+
+    document.querySelectorAll(".continue-btn").forEach(b => b.classList.add("d-none"));
+    document.querySelectorAll(".edit-btn").forEach(b => b.classList.remove("d-none"));
+
+    step2.classList.remove("disabled");
+    step2.querySelector("h3").classList.remove("text-secondary");
+    step2Content.classList.remove("d-none");
+
+    // 🔥 FIX HERE
+    document.querySelectorAll(".continue-step2").forEach(b => b.classList.remove("d-none"));
+    document.querySelectorAll(".edit-step2").forEach(b => b.classList.add("d-none"));
+  });
+});
+
+  /* EDIT STEP 1 */
+  document.querySelectorAll(".edit-btn").forEach(btn => {
+    btn.addEventListener("click", function () {
+
+      step1.querySelector(".step1-body").classList.remove("d-none");
+      reasonBox.classList.remove("d-none");
+      step1Summary.classList.add("d-none");
+
+      document.querySelectorAll(".continue-btn").forEach(b => b.classList.remove("d-none"));
+      document.querySelectorAll(".edit-btn").forEach(b => b.classList.add("d-none"));
+
+      step2.classList.add("disabled");
+      step2Content.classList.add("d-none");
+      step2Summary.classList.add("d-none");
+
+      document.querySelectorAll(".continue-step2").forEach(b => b.classList.add("d-none"));
+      document.querySelectorAll(".edit-step2").forEach(b => b.classList.add("d-none"));
+    });
+  });
+
+  /* ================= STEP 2 ================= */
+
+  document.querySelectorAll(".continue-step2").forEach(btn => {
+    btn.addEventListener("click", function () {
+
+      const selected = document.querySelector(".refund-radio:checked");
+      if (!selected) {
+        refundError.classList.remove("d-none");
+        return;
+      }
+
+      refundError.classList.add("d-none");
+      step2Summary.textContent = selected.nextElementSibling.textContent;
+
+      step2Content.classList.add("d-none");
+      step2Summary.classList.remove("d-none");
+
+      document.querySelectorAll(".continue-step2").forEach(b => b.classList.add("d-none"));
+      document.querySelectorAll(".edit-step2").forEach(b => b.classList.remove("d-none"));
+
+      step3.classList.remove("disabled");
+      step3.querySelector("h3").classList.remove("text-secondary");
+      document.querySelector(".step3-content").classList.remove("d-none");
+      document.querySelector(".submit-btn").classList.remove("d-none");
+    });
+  });
+
+  /* EDIT STEP 2 */
+  document.querySelectorAll(".edit-step2").forEach(btn => {
+    btn.addEventListener("click", function () {
+
+      step2Content.classList.remove("d-none");
+      step2Summary.classList.add("d-none");
+
+      document.querySelectorAll(".continue-step2").forEach(b => b.classList.remove("d-none"));
+      document.querySelectorAll(".edit-step2").forEach(b => b.classList.add("d-none"));
+
+      step3.classList.add("disabled");
+      document.querySelector(".step3-content").classList.add("d-none");
+      document.querySelector(".submit-btn").classList.add("d-none");
+    });
+  });
+
+});
+</script>
+
+</body>
+     <div id="header"></div>
+      <!-- HERO: Choose your vehicle -->
+      <div class="page-content">
+         <div class="d-lg-none d-flex mob-static-sidebar">
+            <div class="accordion accordion-flush" id="categoryAccordion">
+               <!-- CATEGORY ITEM -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#airIntake">
+                     Overview
+                     </button>
+                  </h2>
+                  <div id="airIntake" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
+                     <div class="accordion-body">
+                        <ul class="list-unstyled sidebar-menu">
+                           <li><a href="overview.html">Overview</a></li>
+                           <li><a href="account-information.html">Account Information</a></li>
+                           <li><a href="addresses.html">Addresses</a></li>
+                           <li><a href="garage.html">Garage + Build List</a></li>
+                           <li><a href="buildbucks.html">BuildBucks</a></li>
+                           <li><a href="orders.html">Order History</a></li>
+                           <li><a href="mailing-list.html">Mailing List</a></li>
+                           <li><a href="create-a-return.html">Create a Return/Cancellation</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="myaccount-section">
+            <!-- ============ CONTACT PAGE ============ -->
+            <div class="container">
+               <div class="row">
+                  <!-- ========== LEFT SIDEBAR (ONLY XL) ========== -->
+                  <div class="col-xl-2 col-lg-3 col d-none d-lg-block">
+                     <div class="sidebar-list">
+                        <div class="title">My Account</div>
+                        <ul class="list-unstyled sidebar-menu">
+                           <li><a href="overview.html">Overview</a></li>
+                           <li><a href="account-information.html">Account Information</a></li>
+                           <li><a href="addresses.html">Addresses</a></li>
+                           <li><a href="garage.html">Garage + Build List</a></li>
+                           <li><a href="buildbucks.html">BuildBucks</a></li>
+                           <li><a href="orders.html">Order History</a></li>
+                           <li><a href="mailing-list.html">Mailing List</a></li>
+                           <li><a href="create-a-return.html">Create a Return/Cancellation</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- ================= RIGHT SECTION ================= -->
+                  <div class="col-12 col-xl-10 col-lg-9 ps-lg-5 pe-lg-4">
+                    
+                        <!-- Header -->
+                        <div class="border-bottom pb-8">
+                            <div class="d-flex  px-lg-0 px-4">
+                                <div class=" desktop-title text-uppercase mb-1 d-lg-block d-none"> Request Cancellation</div>
+                                <div class="mobile-title text-uppercase mb-1 d-lg-none d-block">Request Cancellation</div>
+                            </div>
+                            <div class="fw-semibold px-lg-0 px-4">Order# 3247973</div>
+                        </div>
+
+<div class="wizard-form px-lg-0 px-4">
+
+<!-- ================= STEP 1 ================= -->
+<div class="step step-1 border-bottom py-4">
+
+  <!-- HEADER -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="d-flex mb-0">
+      <span>1</span> <span class="mx-2">|</span>
+      Select the items you wish to cancel
+    </h3>
+
+    <!-- DESKTOP BUTTONS -->
+    <div class="col-3 d-none d-lg-flex gap-2">
+      <button class="btn btn-dark continue-btn primary-btn d-none ms-auto">Continue</button>
+      <button class="btn btn-outline-dark edit-btn  d-none ms-auto">Edit</button>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="step1-body col-lg-8">
+    <div class="d-flex gap-lg-6 gap-3 align-items-start">
+     
+
+     <div class="d-flex gap-4">
+          <input type="checkbox" class="form-check-input mt-2 product-check">
+    <div class="flex-shrink-0 product-img"> <a href=""><img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/ProductDigitalAssets/Mishimoto/MMBCC-CBTWO-PH_1.jpg" class="img-fluid" alt=""></a> </div>
+    </div>
+
+       <div class="d-lg-flex w-100"><div class="flex-grow-1"> <strong>UFI Filters</strong> <div>MPN: 25.023.00 | SKU: 76135235</div> <div class="fw-semibold">UFI Filters Oil Filter - 071115562A</div> </div>
+
+    <div class="d-flex align-items-start justify-content-lg-center qty-box  mt-lg-0 mt-3">
+      <button class="qty-btn" disabled="">−</button>
+      <input type="number" value="1" class="qty-input">
+      <button class="qty-btn">+</button>
+    </div></div>
+    </div>
+
+    <!-- REASON -->
+<div class="sort-select-wrapper reason-box d-none mt-3 col-lg-8">
+  <label class="fw-semibold">Select a Reason *</label>
+
+  <div class="dropdown">
+    <button
+      class="custom-input d-flex align-items-center px-2 reason-dropdown-btn"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span class="sort-value flex-grow-1">Select Reason</span>
+      <i class="fa-solid fa-chevron-down sort-chevron"></i>
+    </button>
+
+    <ul class="dropdown-menu sort-dropdown">
+      <li><a class="dropdown-item active" href="#">Select Reason</a></li>
+      <li><a class="dropdown-item" href="#">Item(s) Would Not Arrive on Time</a></li>
+      <li><a class="dropdown-item" href="#">Ordered the Wrong Item</a></li>
+      <li><a class="dropdown-item" href="#">Shipping Cost Too High</a></li>
+    </ul>
+  </div>
+
+  <small class="text-danger reason-error d-none">This field is required</small>
+</div>
+
+
+
+  </div>
+
+  <!-- MOBILE BUTTONS -->
+  <div class=" d-lg-none mt-3">
+    <button class="btn btn-dark w-100 continue-btn primary-btn d-none ">Continue</button>
+    <button class="btn btn-outline-dark w-100 edit-btn  d-none mt-2 ">Edit</button>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="step1-summary d-none mt-3 d-flex gap-3 align-items-center">
+    <img src="https://assets.uspmotorsports.com/zsmxyc/323/323/resize/commerce/assets/ProductDigitalAssets/Mishimoto/MMBCC-CBTWO-PH_1.jpg"
+         width="60">
+    <div class="fw-semibold step1-summary-text"></div>
+  </div>
+</div>
+
+<!-- ================= STEP 2 ================= -->
+<div class="step step-2 border-bottom py-4 disabled">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="d-flex mb-0 text-secondary">
+      <span>2</span> <span class="mx-2">|</span>
+      Refund Method
+    </h3>
+
+    <!-- DESKTOP -->
+    <div class="col-3 d-none d-lg-flex gap-2">
+      <button class="btn btn-dark continue-step2 primary-btn d-none ms-auto">Continue</button>
+      <button class="btn btn-outline-dark edit-btn edit-step2 d-none ms-auto">Edit</button>
+    </div>
+  </div>
+
+  <div class="step2-content d-none">
+    <div class="form-check">
+      <input type="radio" class="form-check-input refund-radio" name="refund">
+      <label class="form-check-label">Full Refund</label>
+    </div>
+
+    <div class="form-check">
+      <input type="radio" class="form-check-input refund-radio" name="refund">
+      <label class="form-check-label">Store Credit</label>
+    </div>
+
+    <small class="text-danger refund-error d-none">
+      Please select a refund method
+    </small>
+  </div>
+
+  <!-- MOBILE -->
+  <div class="d-lg-none mt-3">
+    <button class="btn btn-dark w-100 continue-step2 primary-btn d-none">Continue</button>
+    <button class="btn btn-outline-dark w-100 edit-btn edit-step2  d-none mt-2">Edit</button>
+  </div>
+
+  <div class="step2-summary d-none fw-semibold mt-2"></div>
+</div>
+
+<!-- ================= STEP 3 ================= -->
+<div class="step step-3 py-4 disabled">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="d-flex mb-0 text-secondary">
+      <span>3</span> <span class="mx-2">|</span>
+      Confirm Your Cancellation
+    </h3>
+
+    <button class="btn btn-dark submit-btn primary-btn d-none">Submit</button>
+  </div>
+
+  <div class="step3-content d-none">
+    <p>Lorem ipsum cancellation confirmation text.</p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+               
+               
+   
+    
+
+                     
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div id="footer"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

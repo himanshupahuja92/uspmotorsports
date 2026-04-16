@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>USP Motorsports - Complete Layout</title>
+      <link rel="stylesheet" href="https://use.typekit.net/fcd0awa.css">
+      <link rel="stylesheet" href="https://use.typekit.net/xde5rsw.css">
+      <!-- <link rel="stylesheet" href="https://use.typekit.net/okm3mzl.css"> -->
+      <link rel="stylesheet" href="https://use.typekit.net/mcw2mcb.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="icon" href="assets/img/popup-logo.svg" type="image/x-icon">
+   </head>
+   <body>
+            <!-- MOBILE HEADER: compact header visible on xs / sm / md (tablet & mobile), hidden on lg+ -->
+      <header class="mobile-header d-lg-none">
+         <div class="container d-flex align-items-center justify-content-between py-2 px-4">
+            <button class="mobile-hamburger btn text-white p-0" aria-label="Open menu">
+            <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
+            <a href="#" class="mobile-brand text-center" aria-label="USP Motorsports">
+            <img src="assets/img/white-mob-logo.svg" alt="USP" style="height:28px;" onerror="this.style.display='inline-block';this.parentNode.innerHTML='USP';">
+            </a>
+            <button class="mobile-plus btn p-0" aria-label="Quick action"
+               data-bs-toggle="modal" data-bs-target="#garageModal">
+            <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="modal fade" id="garageModal" tabindex="-1">
+               <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content garage-modal">
+                     <!-- HEADER (scrolls with page) -->
+                     <!-- SCROLLABLE FULL CONTENT -->
+                     <div class="garage-scroll ">
+                        <div class="garage-header d-flex align-items-center justify-content-between px-4 py-3">
+                           <button class="btn p-0 text-white" data-bs-dismiss="modal">
+                           <i class="fa-solid fa-chevron-left fs-5"></i>
+                           </button>
+                           <img src="assets/img/mobile-popup-logo.svg" class="img-fluid" alt="USP Motorsports">
+                           <div style="width:20px;"></div>
+                        </div>
+                        <!-- TITLE (scrolls with page) -->
+                        <h3 class="text-white text-center garage-title">GARAGE</h3>
+                        <hr class="opacity-100">
+                        <!-- BODY -->
+                        <div class="px-4">
+                           <small>
+                              <p class=" text-white  mt-4 mb-4 pe-5">  Enter your vehicle to easily find exact fitment parts & accessories</p>
+                           </small>
+                           <div class="garage-select">
+                              <span class="step-num">1</span>
+                              <select class="form-select garage-input">
+                                 <option>Year</option>
+                                 <option>2025</option>
+                                 <option>2024</option>
+                              </select>
+                           </div>
+                           <div class="garage-select disabled">
+                              <span class="step-num">2</span>
+                              <select class="form-select garage-input" disabled>
+                                 <option>Make</option>
+                              </select>
+                           </div>
+                           <div class="garage-select disabled">
+                              <span class="step-num">3</span>
+                              <select class="form-select garage-input" disabled>
+                                 <option>Model</option>
+                              </select>
+                           </div>
+                           <div class="garage-select disabled">
+                              <span class="step-num">4</span>
+                              <select class="form-select garage-input" disabled>
+                                 <option>Trim</option>
+                              </select>
+                           </div>
+                           <div class="garage-select disabled">
+                              <span class="step-num">5</span>
+                              <select class="form-select garage-input" disabled>
+                                 <option>Engine</option>
+                              </select>
+                           </div>
+                           <ul class="garage-footer-list text-white mt-5 text-center px-4 pb-2">
+                              <li>Store multiple vehicles</li>
+                              <li>Get product recommendations</li>
+                              <li>Easily find exact fitment parts & accessories</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="top-promo-bar">
+         <div class="swiper promoTopSlider">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide"><a href="">Over 650K OEM Products</a></div>
+               <div class="swiper-slide"><a href="">Free Shipping on Orders Over $49*</a></div>
+            </div>
+         </div>
+      </div>
+      <!-- MOBILE NAV OVERLAY (static HTML, no script population) -->
+      <nav class="mobile-nav d-lg-none" aria-hidden="true">
+         <div class="mobile-nav-inner">
+            <!-- Header -->
+            <div class="mobile-nav-top d-flex align-items-center justify-content-between px-5 py-3 mb-3">
+               <div></div>
+               <a href="#" class="mobile-brand text-center" aria-label="USP Motorsports">
+                  <!-- logo svg or img -->
+                  <img src="assets/img/white-mob-logo.svg" alt="USP" style="height:28px;">
+               </a>
+               <button class="mobile-nav-close btn btn-link text-white p-0" aria-label="Close menu"><i class="fa-solid fa-xmark fa-lg"></i></button>
+            </div>
+            <!-- Body: static content copied from your reference -->
+            <div class="mobile-nav-body">
+               <!-- Account / top quick action -->
+               <div class="navigation-account px-4 pb-3 mb-2 ">
+                  <button class="btn btn-link p-0"><img src="assets/img/icons/account_circle_white_24dp.svg" alt="user" class="img-fluid me-1" width="20" height="20">  Log In / Sign Up</button>
+               </div>
+               <!-- Top quick links -->
+               <div class="mobile-quick-links">
+                  <ul class="list-unstyled mb-0">
+                     <li><a href="/sales" class="d-block text-uppercase">BLACK FRIDAY DEALS</a></li>
+                     <li><a href="/brands" class="d-block text-uppercase">Shop by brand</a></li>
+                     <li><a href="/new-arrivals" class="d-block text-uppercase">New arrivals</a></li>
+                  </ul>
+               </div>
+               <!-- Sections: Categories as static accordion-like list (pure HTML) -->
+               <div class="mobile-navigation py-2 px-4">
+                  <div class="mb-3">
+                  </div>
+                  <div class="accordion-list">
+                     <!-- All categories -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title"> All Categories</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="All Categories" aria-controls="sub-ac"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-ac" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Shop All </a></li>
+                           <li><a href="#" class="d-block">AC and Climate Control</a></li>
+                           <li><a href="#" class="d-block">Air Intake</a></li>
+                           <li><a href="#" class="d-block">Brakes</a></li>
+                           <li><a href="#" class="d-block">Cleaning and Car Care</a></li>
+                           <li><a href="#" class="d-block">Clutch and Flywheel</a></li>
+                           <li><a href="#" class="d-block">Drivetrain and Axle</a></li>
+                           <li><a href="#" class="d-block">Engine</a></li>
+                           <li><a href="#" class="d-block">Engine Cooling</a></li>
+                           <li><a href="#" class="d-block">Exhaust</a></li>
+                           <li><a href="#" class="d-block">Exterior and Body</a></li>
+                           <li><a href="#" class="d-block">Fuel System</a></li>
+                           <li><a href="#" class="d-block">Hardware and Shop Supplies</a></li>
+                           <li><a href="#" class="d-block">Interior</a></li>
+                           <li><a href="#" class="d-block">Lighting</a></li>
+                           <li><a href="#" class="d-block">Merchandise and Apparel</a></li>
+                           <li><a href="#" class="d-block">Steering</a></li>
+                           <li><a href="#" class="d-block">Suspension</a></li>
+                           <li><a href="#" class="d-block">Tools and Equipment</a></li>
+                           <li><a href="#" class="d-block">Transmission</a></li>
+                           <li><a href="#" class="d-block">Wheels and Tires</a></li>
+                           <li><a href="#" class="d-block">OEM</a></li>
+                        </ul>
+                     </div>
+                     <!-- AC and Climate Control (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">AC and Climate Control</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Expand AC and Climate Control" aria-controls="sub-ac"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-ac" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">AC Buttons and Controls</a></li>
+                           <li><a href="#" class="d-block">AC Fluids and Chemicals</a></li>
+                           <li><a href="#" class="d-block">AC Compressor</a></li>
+                           <li><a href="#" class="d-block">Cabin Air Filters</a></li>
+                        </ul>
+                     </div>
+                     <!-- Air Intake (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Air Intake</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Expand Air Intake" aria-controls="sub-air"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-air" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Performance Air Intake Kits</a></li>
+                           <li><a href="#" class="d-block">Intake Boots and Hoses</a></li>
+                           <li><a href="#" class="d-block">Intake Tools</a></li>
+                        </ul>
+                     </div>
+                     <!-- Brakes (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Brakes</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Expand Brakes" aria-controls="sub-brakes"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-brakes" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Brakes (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Cleaning and Car Care</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Cleaning and Car Care" aria-controls="sub-cleaning"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-cleaning" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Clutch and Flywheel (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Clutch and Flywheel</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Clutch and Flywheel" aria-controls="sub-clutch"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-clutch" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Drivetrain and Axle (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Drivetrain and Axle</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Drivetrain and Axle" aria-controls="sub-drivetrain"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-drivetrain" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Engine (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Engine</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Engine" aria-controls="sub-engine"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-engine" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Engine Cooling (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Engine Cooling</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Engine Cooling" aria-controls="sub-engine-cooling"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-engine-cooling" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Exhaust (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Exhaust</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Exhaust" aria-controls="sub-exhaust"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-exhaust" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Exterior and Body (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Exterior and Body</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Exterior and Body" aria-controls="sub-exterior-and-body"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-exterior-and-body" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Fuel System (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Fuel System</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Fuel System" aria-controls="sub-fuel-system"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-fuel-system" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- Hardware and Shop Supplies (has submenu) -->
+                     <div class="accordion-item " aria-expanded="false">
+                        <div class="d-flex justify-content-between align-items-center text-uppercase">
+                           <a href="#" class="text-decoration-none accordion-title">Hardware and Shop Supplies</a>
+                           <button class="btn btn-sm p-0 accordion-toggle" aria-label="Hardware and Shop Supplies" aria-controls="sub-hardware-and-shop-supplies"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <ul id="sub-hardware-and-shop-supplies" class="sub-menu list-unstyled">
+                           <li><a href="#" class="d-block">Brake Pads</a></li>
+                           <li><a href="#" class="d-block">Brake Calipers</a></li>
+                           <li><a href="#" class="d-block">Big Brake Kits</a></li>
+                        </ul>
+                     </div>
+                     <!-- ... add more categories here if needed ... -->
+                  </div>
+               </div>
+               <!-- Service links -->
+               <div class="service-links pt-3 ">
+                  <ul class="list-unstyled mb-0">
+                     <li><a href="/customer-service" class="d-block">Customer service</a></li>
+                     <li>
+                        <button id="openTrackOrderBtn" class="btn btn-link p-0 text-start" data-bs-toggle="modal" data-bs-target="#trackOrderModal">
+                        Track Your Order
+                        </button>
+                     </li>
+                     <li><a href="/my-account/create-a-return" class="d-block">Create a Return</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Modal markup -->
+      <div class="modal fade usp-account-modal" id="trackOrderModal" tabindex="-1" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content usp-modal-content">
+               <!-- Top header (logo + close) -->
+               <div class="usp-modal-top border-bottom">
+                  <div class="usp-modal-header-inner d-flex justify-content-between align-items-center px-5 py-3">
+                     <button class="btn p-0" data-bs-dismiss="modal">
+                     <i class="fa-solid fa-chevron-left" style="font-size: 12px;"></i>
+                     </button>
+                     <!-- Logo (centered) -->
+                     <div class="usp-logo text-center">
+                        <img src="assets/img/popup-logo.svg" alt="USP Logo" class="img-fluid" style="max-height:48px;">
+                     </div>
+                     <!-- Close -->
+                     <button type="button" class="btn-close p-0 m-0" data-bs-dismiss="modal" aria-label="Close" style="opacity: 1;"></button>
+                  </div>
+                  <!-- Big centered title like screenshot -->
+                  <h3 class="text-center my-3 text-uppercase small    ">Track Your Order</h3>
+               </div>
+               <!-- Body -->
+               <div class="usp-modal-body pb-4">
+                  <div class="container px-4">
+                     <!-- Info text -->
+                     <p class=" mt-3 mb-4">
+                        To track your order, please enter your order information below. Order numbers can be found in your Order Confirmation Email.
+                        If anything is unclear, give us a shout at <a href="tel:8887557772">888-755-7772</a> or shoot us a message.
+                     </p>
+                     <!-- Track form -->
+                     <form id="trackOrderForm" class="mx-auto d-flex flex-column px-4 mb-3" style="max-width:900px;">
+                        <div class="usp-input d-flex align-items-center w-100 mb-3 ">
+                           <input type="text" class="usp-input__input form-control border-0 shadow-none bg-transparent" placeholder="Order Number" aria-label="Order Number">
+                        </div>
+                        <div class="usp-input d-flex align-items-center w-100  mb-3">
+                           <input type="text" class="usp-input__input form-control border-0 shadow-none bg-transparent" placeholder="Last Name" aria-label="Last Name">
+                        </div>
+                        <div class="usp-input d-flex align-items-center w-100  mb-3">
+                           <input type="text" class="usp-input__input form-control border-0 shadow-none bg-transparent" placeholder="Shipping Zip Code" aria-label="Shipping Zip Code">
+                        </div>
+                        <div class="text-center">
+                           <button type="submit" class="btn rounded-0 mt-3 mx-auto px-3 py-2 usp-signin-btn">Submit</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      <div class="utility-bar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <div class="left-col d-flex align-items-center">
+                  <div class="d-flex left-panel align-items-center border-end">
+                     <a href="#" class="custom-service " >Customer Service</a>
+                     <!-- Track Your Order: focus-within dropdown (CSS-only) -->
+                     <div class="track-wrapper">
+                        <button class="track-order-btn py-2 px-3" aria-haspopup="true" aria-expanded="false">Track Your Order</button>
+                        <div class="track-dropdown" role="dialog" aria-label="Track your order">
+                           <h3>TRACK YOUR ORDER</h3>
+                           <p>To track your order, please enter your order information below. Order numbers can be found in your Order Confirmation Email. If anything is unclear, give us a shout at <strong>888-755-7772</strong> or shoot us a message.</p>
+                           <form class="track-form" action="#" method="get">
+                              <div class="track-field">
+                                 <input type="text" name="order_number" placeholder="Order Number" aria-label="Order Number">
+                              </div>
+                              <div class="track-field">
+                                 <input type="text" name="last_name" placeholder="Last Name" aria-label="Last Name">
+                              </div>
+                              <div class="track-field">
+                                 <input type="text" name="zip" placeholder="Shipping Zip Code" aria-label="Shipping Zip Code">
+                              </div>
+                              <button type="submit " class="track-submit primary-btn">Submit</button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="d-none d-md-block text-white  left-panel-2 ">
+                     Race Now, Pay Later — 0% APR Financing with Affirm*
+                  </div>
+               </div>
+               <div class="right-col d-flex align-items-center">
+                  <div class="d-flex ps-3  align-items-center border-start text-end position-relative">
+                     <!-- My Account: hover/focus dropdown (CSS-only) -->
+                     <div class="account-wrapper">
+                        <button class="account-btn  py-2 px-3" aria-haspopup="true" aria-expanded="false">My Account <i class="fa-solid fa-chevron-down fa-xs ms-1"></i></button>
+                        <div class="account-dropdown" role="dialog" aria-label="Account">
+                           <div class="account-panel">
+                              <h3>ACCOUNT</h3>
+                              <div class="reset-password-temporary-info">
+                                 <p class="text-sm">Existing account holders logging in to our new site for the first time must
+                                    <br><a href="/reset-password" class="font-bold underline">reset your password</a>
+                                 </p>
+                              </div>
+                              <form class="account-form" action="#" method="post">
+                                 <div class="account-field">
+                                    <input type="email" name="email" placeholder="Email" aria-label="Email">
+                                 </div>
+                                 <div class="account-field account-field--password">
+                                    <input type="password" name="password" placeholder="Password" aria-label="Password">
+                                    <button type="button" class="pw-toggle" aria-label="Toggle password"><i class="fa-regular fa-eye"></i></button>
+                                 </div>
+                                 <a href="/reset-password" class="forgot-link">Forgot Your Password?</a>
+                                 <button type="submit" class="account-submit primary-btn">Sign In</button>
+                              </form>
+                              <div class="login-screen__terms">By logging in, you agree to USP's <a href="/customer-service/privacy-policy">Privacy Policy</a> and <a href="/customer-service/terms-and-conditions">Terms of Use.</a></div>
+                              <div class="create-account">New Customer? <button class="create-btn">Create an Account</button></div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="px-3 border-lr">Build<span>Bucks $0</span></a>
+                     <a href="#" class=" px-3 pe-4">(0) Cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-header">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="#" class="brand-logo"><img src="assets/img/logo.svg" alt="USP Motorsports" class="img-fluid"></a>
+               </div>
+               <div class="col-xxl-7 col-lg-6 col-md-8 col-12 my-2 my-md-0 pe-xxl-5 pe-0 ps-0">
+                  <div class="input-group search-container pe-5">
+                     <input type="text" class="form-control" placeholder="Search by Part# or Keyword" aria-label="Search">
+                     <button class="btn btn-white" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+               </div>
+               <div class="col-xxl-3 col-lg-4 d-none d-lg-flex justify-content-center">
+                  <!-- Garage: hover/focus dropdown -->
+                  <div class="garage-wrapper  ps-5 ms-xxl-2 ms-3">
+                     <button class="garage-btn user-garage" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-circle-user user-icon"></i>
+                        <div class="garage-text">
+                           <small>Your Garage <i class="fa-solid fa-chevron-down garage-chevron"></i></small>
+                           <span class="garage-vehicle ">Add a Vehicle</span>
+                        </div>
+                     </button>
+                     <div class="garage-dropdown" role="dialog" aria-label="Your Garage">
+                        <div class="garage-panel">
+                           <h3>GARAGE</h3>
+                           <div class="garage-body">
+                              <button class="add-vehicle-btn primary-btn py-2 my-3" >+ Add a Vehicle</button>
+                              <div class="garage-features">
+                                 <div class="garage-item">Store multiple vehicles</div>
+                                 <div class="garage-item">Get product recommendations</div>
+                                 <div class="garage-item">Easily find exact fitment parts &amp; accessories</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="nav-bar-bottom">
+         <div class="container-fluid px-0">
+            <div class="container">
+               <div class="row g-0">
+                  <div class="col-auto   pe-3 all-categories-wrapper ">
+                     <div class="all-categories pe-5"><img src="assets/img/icons/menu-bar.svg" alt="Menu Icon" class="img-fluid me-3" width="25"> All Categories</div>
+                     <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu-container container">
+                           <div class="mega-menu-left">
+                              <ul id="main-categories">
+                                 <li class="active" data-target="ac-control">
+                                    <a href="#">AC and Climate Control
+                                    <a>
+                                 </li>
+                                 <li data-target="air-intake"><a href="">Air Intake</a></li>
+                                 <li data-target="brakes"><a href="">Brakes</a></li>
+                                 <li data-target="cleaning"><a href="">Cleaning and Car Care</a></li>
+                                 <li data-target="clutch"><a href="">Clutch and Flywheel</a></li>
+                                 <li data-target="drivetrain"><a href="">Drivetrain and Axle</a></li>
+                                 <li data-target="engine"><a href="">Engine</a></li>
+                                 <li data-target="engine-cooling"><a href="">Engine Cooling</a></li>
+                                 <li data-target="exhaust"><a href="">Exhaust</a></li>
+                                 <li>... (More Categories)</li>
+                              </ul>
+                           </div>
+                           <div class="mega-menu-right">
+                              <div class="sub-cat-content active" id="ac-control">
+                                 <div class="d-flex align-items-center gap-4 mb-4">
+                                    <div class="navigation h4 mb-0">AC and Climate Control</div>
+                                    <div class="sub-cat-header"> <a href="/category/ac-control" class="link link--thin">Shop All AC and Climate Control (2)</a></div>
+                                 </div>
+                                 <div class="mega-links-grid">
+                                    <a href="#" class="sub-cat-link">AC Buttons and Controls</a>
+                                    <a href="#" class="sub-cat-link">AC Fluids and Chemicals</a>
+                                    <a href="#" class="sub-cat-link">AC Tools and Equipment</a>
+                                    <a href="#" class="sub-cat-link">Heater Core</a>
+                                    <a href="#" class="sub-cat-link">AC Compressor</a>
+                                    <a href="#" class="sub-cat-link">AC Hoses and Pipes</a>
+                                    <a href="#" class="sub-cat-link">AC Vacuum and Blend Door</a>
+                                    <a href="#" class="sub-cat-link">Heater Hoses</a>
+                                    <a href="#" class="sub-cat-link">AC Condenser</a>
+                                    <a href="#" class="sub-cat-link">AC O-Rings, Gaskets, and Seals</a>
+                                    <a href="#" class="sub-cat-link">Blower Motor</a>
+                                    <a href="#" class="sub-cat-link">Vents</a>
+                                    <a href="#" class="sub-cat-link">AC Evaporator</a>
+                                    <a href="#" class="sub-cat-link">AC Receiver Drier</a>
+                                    <a href="#" class="sub-cat-link">Cabin Air Filters</a>
+                                    <a href="#" class="sub-cat-link">AC Expansion and Service Valves</a>
+                                    <a href="#" class="sub-cat-link">AC Switches and Sensors</a>
+                                    <a href="#" class="sub-cat-link">Heater Control Valve</a>
+                                 </div>
+                              </div>
+                              <div class="sub-cat-content" id="air-intake" style="display: none;">
+                                 <div class="sub-cat-header">Air Intake Components</div>
+                                 <p>Sub-links for Air Intake go here...</p>
+                              </div>
+                              <div class="sub-cat-content" id="brakes" style="display: none;">
+                                 <div class="sub-cat-header">Brakes and Braking Systems</div>
+                                 <p>Sub-links for Brakes go here...</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-8 col-lg-7 main-navbar">
+                     <nav class="navbar navbar-expand-lg p-0 h-100">
+                        <div class="collapse navbar-collapse h-100" id="navbarNav">
+                           <ul class="navbar-nav main-nav-links align-items-center">
+                              <li class="nav-item"><a class="nav-link" href="#">Shop by Brand</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">New Arrivals</a></li>
+                              <!-- Engine: example mega menu (left image / center lists / right featured brands) -->
+                              <li class="nav-item nav-item-has-mega">
+                                 <a class="nav-link" href="#">Engine</a>
+                                 <div class="mega-dropdown" aria-hidden="true" role="region" aria-label="Engine menu">
+                                    <!-- REPLACED: reference-style inner markup (figure left / center alphabetical grid / right brands) -->
+                                    <div class="mega-dropdown-inner full-ref">
+                                       <!-- LEFT: figure with full-height visual -->
+                                       <div class="mega-ref-left">
+                                          <figure class="mega-figure">
+                                             <img src="https://assets.uspmotorsports.com/zsmxyc/448/513/fit/c-nav-engine.jpg" alt="Engine" class="img-fluid">
+                                          </figure>
+                                       </div>
+                                       <!-- CENTER: heading + horizontal alphabetical grid (flows A → Z) -->
+                                       <div class="mega-ref-center">
+                                          <div class="mega-ref-header d-flex align-items-end gap-4 mb-4">
+                                             <div class="navigation h4 mb-0">Engine</div>
+                                             <a href="/category/engine" class="link link--thin">Shop All Engine (8,894)</a>
+                                          </div>
+                                          <div class="mega-links-grid">
+                                             <!-- Alphabetical sequence -->
+                                             <a href="/category/engine/alternator">Alternator</a>
+                                             <a href="/category/engine/battery">Battery</a>
+                                             <a href="/category/engine/cooling-system">Cooling System</a>
+                                             <a href="/category/engine/cylinder-head-and-components">Cylinder Head and Components</a>
+                                             <a href="/category/engine/drive-belt-pulleys">Drive Belt Pulleys</a>
+                                             <a href="/category/engine/drive-belt-tensioners">Drive Belt Tensioners</a>
+                                             <a href="/category/engine/drive-belts">Drive Belts</a>
+                                             <a href="/category/engine/electronic-control-units">Electronic Control Units</a>
+                                             <a href="/category/engine/engine-block-and-components">Engine Block and Components</a>
+                                             <a href="/category/engine/engine-o-rings-gaskets-and-seals">Engine O-Rings, Gaskets, and Seals</a>
+                                             <a href="/category/engine/engine-pistons-and-rods">Engine Pistons and Rods</a>
+                                             <a href="/category/engine/engine-switches-sensors-and-relays">Engine Switches, Sensors, and Relays</a>
+                                             <a href="/category/engine/engine-tools-and-equipment">Engine Tools and Equipment</a>
+                                             <a href="/category/engine/engine-wiring-harness">Engine Wiring Harness</a>
+                                             <a href="/category/engine/ignition">Ignition</a>
+                                             <a href="/category/engine/mounts">Mounts</a>
+                                             <a href="/category/engine/oil-filters-and-lubrication">Oil Filters and Lubrication</a>
+                                             <a href="/category/engine/oil-service-kits">Oil Service Kits</a>
+                                             <a href="/category/engine/pcv-catch-cans-and-breathers">PCV, Catch Cans, and Breathers</a>
+                                             <a href="/category/engine/performance-tuning-and-software">Performance Tuning and Software</a>
+                                             <a href="/category/engine/spark-plugs">Spark Plugs</a>
+                                             <a href="/category/engine/starter">Starter</a>
+                                             <a href="/category/engine/switches-sensors-and-relays">Switches, Sensors, and Relays</a>
+                                             <a href="/category/engine/timing">Timing</a>
+                                             <a href="/category/engine/turbocharger-and-supercharger">Turbocharger and Supercharger</a>
+                                             <a href="/category/engine/variable-valve-timing-and-lift">Variable Valve Timing and Lift</a>
+                                          </div>
+                                       </div>
+                                       <!-- RIGHT: featured brands -->
+                                       <div class="mega-ref-right bg-separator-light">
+                                          <div class="subtitle-6">Featured Brands</div>
+                                          <div class="mega-brands-list">
+                                             <a href="/brand/arp">ARP</a>
+                                             <a href="/brand/spulen">Spulen</a>
+                                             <a href="/brand/usp-motorsports">USP Motorsports</a>
+                                             <a href="/brand/tte">TTE</a>
+                                             <a href="/brand/apr">APR</a>
+                                             <a href="/brand/unitronic">Unitronic</a>
+                                             <a href="/brand/oem-vw---audi">OEM VW / Audi</a>
+                                             <a href="/brand/integrated-engineering">Integrated Engineering</a>
+                                             <a href="/brand/je-pistons">JE Pistons</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <!-- Repeat the same structure for other nav items: Exterior, Interior, Lighting, Performance, Suspension, Wheels.
+                                 Copy the entire <li class="nav-item nav-item-has-mega"> ... </li> block above and change:
+                                   - the link text (e.g. "Exterior")
+                                   - the left image src and alt
+                                   - the headings / link texts in center columns
+                                   - featured brand list if needed
+                                 Example placeholder for Exterior (copy/paste and edit contents): -->
+                              <li class="nav-item nav-item-has-mega">
+                                 <a class="nav-link" href="#">Exterior</a>
+                              </li>
+                              <li class="nav-item nav-item-has-mega">
+                                 <a class="nav-link" href="#">Interior</a>
+                              </li>
+                              <li class="nav-item nav-item-has-mega">
+                                 <a class="nav-link" href="#">Lighting</a>
+                              </li>
+                              <li class="nav-item nav-item-has-mega">
+                                 <a class="nav-link" href="#">Performance</a>
+                              </li>
+                              <li class="nav-item nav-item-has-mega ">
+                                 <a class="nav-link" href="#">Suspension</a>
+                              </li>
+                              <li class="nav-item nav-item-has-megaa ">
+                                 <a class="nav-link" href="#">Wheels</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+                  <div class="col-auto  ps-xxl-4 ps-0">
+                     <a href="#" class="sales-btn primary-btn">SALES</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="page-content">
+      <div class="d-lg-none d-flex mob-static-sidebar">
+         <div class="accordion accordion-flush" id="categoryAccordion">
+            <!-- CATEGORY ITEM -->
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button " data-bs-toggle="collapse" data-bs-target="#airIntake">
+                  25 Years of USP Motorsports 
+                  </button>
+               </h2>
+               <div id="airIntake" class="accordion-collapse collapse" data-bs-parent="#categoryAccordion">
+                  <div class="accordion-body">
+                     <ul class="list-unstyled sidebar-menu">
+                        <li><a href="25-years-of-usp-motorsports.html">25 Years of USP Motorsports</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Military Discount</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="warranty.html">Warranty</a></li>
+                        <li><a href="dealer-application.html">Become a USP Dealer</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="hero-banner position-relative w-100">
+         <div class="hero-bg" style="background-image:url('https://assets.uspmotorsports.com/zsmxyc/customer-service-hero.jpg');"></div>
+         <div class="container position-absolute start-0 end-0 bottom-0 text-white z-2">
+            <div class="hero-subtitle-2">We’re Here to Help!</div>
+            <span class="title-stroke">CUSTOMER SERVICE</span>
+            <h1 class="title-solid">RETURNS</h1>
+         </div>
+      </section>
+      <section class="static-section">
+         <!-- ============ CONTACT PAGE ============ -->
+         <div class="container">
+            <div class="row">
+               <!-- ========== LEFT SIDEBAR (ONLY XL) ========== -->
+               <div class="col-xl-2 d-none d-xl-block">
+                  <div class="sidebar-list ">
+                     <div class="title">Customer Service</div>
+                     <ul class="list-unstyled sidebar-menu">
+                        <li><a href="25-years-of-usp-motorsports.html">25 Years of USP Motorsports</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Military Discount</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="warranty.html">Warranty</a></li>
+                        <li><a href="dealer-application.html">Become a USP Dealer</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- ================= RIGHT SECTION ================= -->
+               <div class="col-12 col-xl-10">
+                  <div class="row">
+                     <div class="feature-grid grid-space gx-4">
+                        <div class="feature-card d-flex flex-column">
+                           <a href="#">
+                           <img src="https://assets.uspmotorsports.com/zsmxyc/540/160/fit/create-a-return-01-01.jpg" alt="BuildBucks" class="img-fluid" style="object-fit: cover; width: 100%;">
+                           </a>
+                           <div class="category-info ">
+                              <h3>SUBMIT A REQUEST</h3>
+                              <p>Click "Create a Return" button below and fill out the form to begin.</p>
+                              <button class="primary-btn btn-dark js-open-account"> Log in to create a return</button>
+                           </div>
+                        </div>
+                        <div class="feature-card">
+                           <a href="#">
+                           <img src="https://assets.uspmotorsports.com/zsmxyc/540/160/fit/create-a-return-02.jpg" alt="FAQ" class="img-fluid" style="object-fit: cover; width: 100%;">
+                           </a>
+                           <div class="category-info ">
+                              <h3>RECEIVE RMA Instructions</h3>
+                              <p>Pending approval you will receive Return Merchandise Authorization (RMA) form along with instructions on how to return your product. (This may take between 24-72 hours).</p>
+                           </div>
+                        </div>
+                        <div class="feature-card">
+                           <a href="#">
+                           <img src="https://assets.uspmotorsports.com/zsmxyc/540/160/fit/create-a-return-03.jpg" alt="FAQ" class="img-fluid" style="object-fit: cover; width: 100%;">
+                           </a>
+                           <div class="category-info ">
+                              <h3>Send it back</h3>
+                              <p>Send back your product with the RMA number displayed on the outside of the box. A simple marker will do the trick! Refer to the RMA instructions provided in the corresponding email for guidance on the proper return procedure.</p>
+                           </div>
+                        </div>
+                        <div class="feature-card">
+                           <a href="#">
+                           <img src="https://assets.uspmotorsports.com/zsmxyc/540/160/fit/create-a-return-04.jpg" alt="FAQ" class="img-fluid" style="object-fit: cover; width: 100%;">
+                           </a>
+                           <div class="category-info ">
+                              <h3>RECEIVE REFUND OR REPLACEMENT</h3>
+                              <p>Once the merchandise is received by the USP team, your refund or store credit will be processed within 48 hours, or a replacement will be promptly shipped.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="section-header mt-lg-4 my-lg-12 my-8">
+                        <h2 class="section-title">Return Policy</h2>
+                     </div>
+                     <div class="content-box">
+                        <p>Items can be returned within 90 days* from the ship date. Customers must request an RMA number within 3 days of receiving the item. Items must be new, unopened, unmodified, and in their original packaging (undamaged). The customer is responsible for return shipping costs on all returns unless otherwise authorized by USP Motorsports. Parts returned for a refund will be assessed a 20% restocking fee and any cost incurred during a promotional purchase, including but not limited to shipping fees. Orders that shipped free of charge will have the shipping cost deducted from the refund or store credit.<strong>Parts returned for store credit <span class="text-decoration-underline"> will not</span> be assessed a restocking fee.</strong>  Items returned past 90 days and/or parts which have been installed or attempted to be installed are non-returnable. Certain items are non-returnable; included but not limited to: special order items, electronic items (items with electrical components), DipYourCar products, tools, and on sale/clearance item. These items cannot be returned for a refund or store credit. Under no circumstances will USP reimburse or pay for any parts/labor charges related to an incorrect, faulty, or defective product. Items returned to our repair facility will delay processing up to 5 business days and may incur a processing fee in addition to any restocking fee(s) or other applicable charges.</p>
+                        <p>*During the month of December, all purchased are eligible for returns within 120 days. All other months 90 days from the date of shipment.</p>
+                        <div class="section-header mt-lg-4 my-lg-12 my-8">
+                           <h2 class="section-title">Return Policy</h2>
+                        </div>
+                        <p>All shipments refused by the receiver or returned undeliverable will be processed as a return according to USP's return policy as stated above.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+      </div>
+      <div id="footer"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>
